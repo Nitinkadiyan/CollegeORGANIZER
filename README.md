@@ -29,3 +29,41 @@ StudentOrganizer/
 
 ```sql
 CREATE DATABASE CollegeOrganizer;
+
+-- Table for To-Do Tasks
+CREATE TABLE ToDoApp (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    task_name VARCHAR(255) NOT NULL,
+    status VARCHAR(50) NOT NULL
+);
+
+-- Table for Notes
+CREATE TABLE NotesHeader (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    subject VARCHAR(100) NOT NULL,
+    topic VARCHAR(100) NOT NULL,
+    subtopic VARCHAR(100),
+    content TEXT
+);
+
+-- Table for Deadlines
+CREATE TABLE Deadlines (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    deadline_date VARCHAR(50) NOT NULL
+);
+
+
+
+Make database connection:
+import pyodbc
+
+def get_connection():
+    conn = pyodbc.connect(
+        "Driver={SQL Server};"
+        "Server=YOUR_SERVER_NAME;"   # Change this to your SQL Server name
+        "Database=CollegeOrganizer;"
+        "Trusted_Connection=yes;"
+    )
+    return conn
