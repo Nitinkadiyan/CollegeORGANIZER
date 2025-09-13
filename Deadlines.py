@@ -84,7 +84,7 @@ def delete_date():
 
 
 def dates_menu():
-    print("----Deadlines----")
+    print("\n----Deadlines----\n")
     print("1. Add deadlines/Important dates")
     print("2. View all Deadlines/ Important dates")
     print("3. Search ")

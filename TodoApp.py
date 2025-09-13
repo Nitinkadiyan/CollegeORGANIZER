@@ -63,9 +63,9 @@ def update_status(taskName,new_status):
 
 def show_menu():
     print("\n --- To Do App ---")
-    print("1. add task")
-    print("2.  view tasks")
-    print("3. Task completed")
+    print("1. Add task")
+    print("2. View tasks")
+    print("3.  Mark Task as completed")
     print("4. Delete task")
     print("5. exit")
 def run_todo():

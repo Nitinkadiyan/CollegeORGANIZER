@@ -4,12 +4,18 @@ from notes_adder import notes
 from Student_dashboard import dashboard_menu,run_dash
 
 def display_menu():
-    print("\n ------COllege maker------")
+    print("==================")
+    
+    print("\n StudySphere (Study Organizer Project")
+
+    print("\n==================")
+
     print("1. Task manager")
-    print("2. add Deadlines")
+    print("2. Deadlines")
     print("3. Students DashBoard")
     print("4. Notes Adder")
     print("5. Exit ")
+    print("\n==================")
     
 while True:   
     display_menu() 

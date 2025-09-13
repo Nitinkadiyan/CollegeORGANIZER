@@ -46,7 +46,9 @@ def Deadlines_check():
      
 
 def dashboard_menu():
+    print("==================")
     print("----Students dashboard----")
+    print("==================")
     print("1. Tasks Overview")
     print("2. Important Deadlines")
     print("3. Exit")
